@@ -4,8 +4,7 @@ class CreateAttenders < ActiveRecord::Migration[5.2]
       t.string :stripe_customer_id
 
       t.timestamps
-      t.belongs_to :user, index: true
-     t.belongs_to :event, index: true
+      
     end
   end
 end
