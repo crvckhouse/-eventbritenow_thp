@@ -1,0 +1,21 @@
+
+
+<div class="ml-5">
+
+</div>
+<div class="card text-center ml-2">
+<div class="card-header">
+<h1>EVENT !</h1>
+</div>
+<div class="card-body">
+<h5 class="card-title">Event n° <%= @id %></h5>
+<p class="card-text"><%= @events.title %></p>
+<p class="card-text"><%= @events.description %></p>
+<%= button_to 'Delete gossip', @gossip, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+
+</div>
+<div class="card-footer text-muted">
+2 days ago
+</div>
+</div>

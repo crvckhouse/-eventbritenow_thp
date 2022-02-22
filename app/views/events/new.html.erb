@@ -1,23 +1,26 @@
-<h1>22222</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <br><br><br>
 
-<p>WHESHESHJEHSKJHEQKJ</p>
-<p>WHESHESHJEHSKJHEQKJ</p>
-<p>WHESHESHJEHSKJHEQKJ</p>
-<p>WHESHESHJEHSKJHEQKJ</p>
+    <h1 class="h3 mb-3 font-weight-normal text-center">Créer ton event !</h1>
+  <!-- FORMULAIRE DE CRÉATION D'UN EVENT -->
+  <%= form_with model: @event, local: true,  html: { class: "form-signin mt-3" } do |f| %>
+    <p> Date de début :</br> <%= f.datetime_select :start_date, class: "form-control"%> </p>
+    <p> Durée :</br> <%= f.text_field :duration, class: "form-control"%> </p>
+    <p> Description :</br> <%= f.text_field :description, class: "form-control"%> </p>
+    <p> Titre :</br> <%= f.text_field :title, class: "form-control"%> </p>
+    <p> Prix d'entrée :</br> <%= f.text_field :price, class: "form-control"%> </p>
+    <p> Lieu de l'Event :</br> <%= f.text_field :location, class: "form-control"%></p>
+    
+    <div class="actions mt-5">
+      <%= f.submit "Submit", class: "btn btn-lg btn-primary btn-block" %>
+    </div>
+  <%end%>
+</div>
 
-<p>WHESHESHJEHSKJHEQKJ</p>
-<p>WHESHESHJEHSKJHEQKJ</p>
-<p>WHESHESHJEHSKJHEQKJ</p>
-<p>WHESHESHJEHSKJHEQKJ</p>
 
-<p>WHESHESHJEHSKJHEQKJ</p>
+</div>
 
-<p>WHESHESHJEHSKJHEQKJ</p>
-<p>WHESHESHJEHSKJHEQKJ</p>
-
-<p>WHESHESHJEHSKJHEQKJ</p>
-v
-v
-
-<p>WHESHESHJEHSKJHEQKJ</p>
-<p>WHESHESHJEHSKJHEQKJ</p>
+</div>
+</div>
